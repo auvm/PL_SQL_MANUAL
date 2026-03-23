@@ -1,0 +1,22 @@
+--CLIENTES:
+Name       Null?    Type          
+---------- -------- ------------- 
+ID_CLIENTE NOT NULL NUMBER        
+NOMBRE              VARCHAR2(100) 
+CIUDAD              VARCHAR2(50) 
+
+--PEDIDOS:
+Name         Null?    Type   
+------------ -------- ------ 
+ID_PEDIDO    NOT NULL NUMBER 
+ID_CLIENTE            NUMBER 
+ID_PRODUCTO           NUMBER 
+CANTIDAD              NUMBER 
+FECHA_PEDIDO          DATE
+
+--PRODUCTOS:
+Name        Null?    Type          
+----------- -------- ------------- 
+ID_PRODUCTO NOT NULL NUMBER        
+NOMBRE               VARCHAR2(100) 
+PRECIO               NUMBER   
