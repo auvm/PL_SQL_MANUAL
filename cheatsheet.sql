@@ -16,6 +16,11 @@ CREATE TABLE AREAS (
     GERENTE VARCHAR(200)
 );
 
+--Añadir PK a una tabla ya existente
+ALTER TABLE nombre_tabla
+ADD CONSTRAINT nombre_pk PRIMARY KEY (columna1, columna2, ...);
+
+
 --Mostrar estructura de tabla
 DESCRIBE EMPLEADOS;
 
